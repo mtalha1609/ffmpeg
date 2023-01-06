@@ -1,0 +1,19 @@
+FFMPEG-Commands
+
+Converting 4K video to diffrent Qualities --M3U8 FORMAT.
+
+ffmpeg -i input.mp4 -c:a copy -c:v libx264 -s 3840x2160 outuput.m3u8 -//Converting In 2160p
+ffmpeg -i input.mp4 -c:a copy -c:v libx264 -s 2560x1440 outuput.m3u8 -//Converting In 1440p
+ffmpeg -i input.mp4 -c:a copy -c:v libx264 -s 1920x1080 outuput.m3u8 -//Converting In 1080p
+ffmpeg -i input.mp4 -c:a copy -c:v libx264 -s 1280x720  outuput.m3u8 -//Converting In 720p
+ffmpeg -i input.mp4 -c:a copy -c:v libx264 -s 852x480   outuput.m3u8 -//Converting In 480p
+
+
+Converting 4K video to diffrent Qualities --MP4 FORMAT.
+
+ffmpeg -i input.m3u8 -c:a copy -c:v libx264 -s 3840x2160 outuput.mp4 -//Converting In 2160p
+ffmpeg -i input.m3u8 -c:a copy -c:v libx264 -s 2560x1440 outuput.mp4 -//Converting In 1440p
+ffmpeg -i input.m3u8 -c:a copy -c:v libx264 -s 1920x1080 outuput.mp4 -//Converting In 1080p
+ffmpeg -i input.m3u8 -c:a copy -c:v libx264 -s 1280x720  outuput.mp4 -//Converting In 720p
+ffmpeg -i input.m3u8 -c:a copy -c:v libx264 -s 852x480   outuput.mp4 -//Converting In 480p
+
